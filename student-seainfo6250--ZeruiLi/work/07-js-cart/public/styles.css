@@ -1,0 +1,62 @@
+html{
+    background-color: #e0f0f5;
+}
+
+#app {
+    width: 90%;
+    margin: 1rem auto;
+    background-color: #f7f4ef;
+    padding: 1rem;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.listings {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.product {
+    grid-column: span 4;
+    background-color: #d0e8e4;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+  
+.not-in-cart {
+    display: none;
+}
+
+.carts {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    background-color: #b8d8d8;
+}
+
+.cart {
+    grid-column: span 4;
+    text-align: center;
+    padding: 1rem;
+}
+
+button {
+    background-color: #a3c1ad;
+    border: 1px solid rgb(36, 41, 38);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fde6d2;
+    color: #7da3a1;
+}

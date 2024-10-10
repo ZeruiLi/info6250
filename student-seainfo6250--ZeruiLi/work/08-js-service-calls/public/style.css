@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #2c3e50;
+    --color-extra: #3498db;
+    --color-dark: #34495e;
+    --color-light: #f5f7fa;
+    --color-contrast: #e74c3c;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-light);
+}
+
+#app {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem;
+}
+
+.login form,
+.word {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn {
+    border: 0;
+    background-color: var(--color-light);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    color: var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: var(--color-contrast);
+    color: white;
+    transform: translateY(-0.2rem);
+}
+
+.store-info {
+    font-weight: bold;
+    padding: 3rem;
+    background-color: var(--color-dark);
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+}
+
+.form-btn {
+    background-color: var(--color-extra);
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-0.2rem);
+}
+
+
+.error {
+	background-color: brown;
+	color: white;
+}
